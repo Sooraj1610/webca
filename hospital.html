@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Website</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">🏥 Our Hospital</div>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="hospital.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="special-care.html">Specialty Care</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
+        <li><a href="telemedicine.html">Telemedicine</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="image-container">
+      <h1>Making Health Care Better Together</h1>
+      <p>We strive to provide top-quality healthcare services to ensure the well-being of our patients.</p>
+      <div class="button-group">
+        <a href="contact.html" class="btn btn-primary">Make An Appointment</a>
+        <a href="special-care.html" class="btn btn-outline">View Department</a>
+      </div>
+      <img src="/images/header.webp" width="1200" height="600" alt="Hospital staff assisting patient in modern facility" class="responsive-img" />
+    </div>
+
+    <section class="services-section">
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="service">
+          <img src="images/generalcare.webp" alt="General healthcare illustration" loading="lazy" />
+          <h3>General Care</h3>
+          <p>Comprehensive healthcare services for all ages.</p>
+        </div>
+        <div class="service">
+          <img src="/images/emergency.webp" width="800" height="500" alt="Emergency ambulance and care unit" loading="lazy" />
+          <h3>Emergency Services</h3>
+          <p>24/7 emergency response and critical care.</p>
+        </div>
+        <div class="service">
+          <img src="images/diagonastic.webp" alt="Medical diagnostics lab and testing" loading="lazy" />
+          <h3>Diagnostics</h3>
+          <p>Advanced diagnostic services for accurate results.</p>
+        </div>
+        <div class="service">
+          <img src="images/surgery.webp" alt="Surgical team in operation theatre" loading="lazy" />
+          <h3>Surgery</h3>
+          <p>State-of-the-art surgical facilities and expertise.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <h2>What Our Patients Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <p>"The doctors and staff were incredibly kind and professional. I felt cared for every step of the way."</p>
+          <h3>- Amanpreet Kaur</h3>
+        </div>
+        <div class="testimonial">
+          <p>"Thanks to the expert care I received, my recovery was quick and smooth. Highly recommend this hospital!"</p>
+          <h3>- Rajesh Sharma</h3>
+        </div>
+        <div class="testimonial">
+          <p>"Clean environment, advanced facilities, and caring nurses. It felt like home during my stay."</p>
+          <h3>- Meena Verma</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-section">
+      <h2>Our Mission</h2>
+      <p>We are dedicated to providing the highest quality healthcare services to our community.</p>
+    </section>
+
+    <section class="choose-us-section">
+      <h2>Why Choose Us?</h2>
+      <p>Our hospital offers a range of services and has a team of experienced professionals ready to assist you.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>🏥 Our Hospital</p>
+        <p>123 Health Street, Punjab, India</p>
+        <p>Email: contact@ourhospital.com</p>
+        <p>Phone: +91-9876543210</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="hospital.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="special-care.html">Specialty Care</a></li>
+          <li><a href="outreach.html">Outreach</a></li>
+          <li><a href="telemedicine.html">Telemedicine</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2025 Our Hospital. All rights reserved.</p>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(error => {
+          console.error('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+
+</body>
+</html>
